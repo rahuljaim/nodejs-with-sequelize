@@ -1,0 +1,22 @@
+<section>
+<h1> All Gigs</h1>
+
+{{#each gigs}}
+  <div class="gig">
+    <h2>{{title}}</h2>
+    <p>{{description}}</p>
+
+    <ul>
+
+      <li>Budget: {{budget}}</li>
+      <li>Technology needed: {{technologies}}</li>
+
+    </ul>
+    
+  </div>
+{{else}}
+  <p>No gigs found.</p>
+
+{{/each}}
+
+</section>
